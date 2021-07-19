@@ -14,6 +14,7 @@ provider "random" {
 variable "id" {
   description = "Change this ID will change the pet name"
   type        = string
+  default     = "123"
 }
 
 resource "random_pet" "server" {
