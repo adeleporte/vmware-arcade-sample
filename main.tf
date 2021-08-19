@@ -20,7 +20,7 @@ variable "id" {
 resource "random_pet" "server" {
   keepers = {
     # Generate a new pet name each time we switch to a new AMI id
-    pet_id = "${var.id}"
+    pet_id = var.id
   }
 }
 
